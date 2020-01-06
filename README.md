@@ -1,1 +1,1 @@
-# StateOfJS-homepage
+# State of JS homepage

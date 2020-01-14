@@ -7,8 +7,8 @@ import Newsletter from '../components/Newsletter'
 import About from '../components/About'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
-// import ViewResults from '../components/ViewResults'
-import TakeSurvey from '../components/TakeSurvey'
+import ViewResults from '../components/ViewResults'
+// import TakeSurvey from '../components/TakeSurvey'
 // import ReactGA from 'react-ga'
 // import Stats from '../components/common/Stats'
 // import Comments from '../components/common/Comments'
@@ -21,7 +21,8 @@ const Index = ({ location }) => (
             {/* <Bubbles /> */}
             <div className="intro section-narrow section-border">
                 <Intro />
-                <TakeSurvey location={location}/>
+                {/* <TakeSurvey location={location}/> */}
+                <ViewResults/>
             </div>
             {/* <Stats /> */}
             <PreviousYears />

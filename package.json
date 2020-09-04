@@ -31,7 +31,7 @@
     "markdown-it": "^10.0.0",
     "markdown-loader": "^5.1.0",
     "node-fetch": "^2.6.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "numeral": "^2.0.6",
     "object-assign": "^4.1.1",
     "path-dirname": "^1.0.2",

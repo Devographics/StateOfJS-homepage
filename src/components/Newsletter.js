@@ -4,7 +4,9 @@ import ReactGA from 'react-ga'
 import fetch from 'isomorphic-fetch'
 
 const postUrl =
-    'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3/add'
+    'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3s/add'
+const dataSiteKey = '6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6'
+const inputKey = 'hpc4b27b6e-eb38-11e9-be00-06b4694bee2a'
 
 export default class Newsletter extends Component {
     static propTypes = {
@@ -61,17 +63,27 @@ export default class Newsletter extends Component {
         const { email, loading, error, success } = this.state
 
         return (
-            <div className={`Newsletter Newsletter--${loading ? 'loading' : ''}`}>
-                {error && <div className="Newsletter__Error">{error.message}</div>}
+            <div
+                className={`Block Block--Newsletter Newsletter Newsletter--${
+                    loading ? 'loading' : ''
+                }`}
+            >
+                <h3 className="Block__Heading">Stay Tuned</h3>
+                <p className="Block__Concent">
+                    Leave us your email and we’ll let you know when the next survey takes place.
+                </p>
+
                 {success ? (
-                    <div className="Newsletter__Success">{success.message}</div>
+                    <div className="Newsletter__Message Newsletter__Success">{success.message}</div>
                 ) : (
                     <form
                         method="post"
                         action={postUrl}
-                        datasitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
+                        datasitekey={dataSiteKey}
                         onSubmit={this.handleSubmit}
                     >
+                        <label className="hidden" htmlFor="field_0">Email</label>
+
                         <input
                             className="Newsletter__Email"
                             id="field_0"
@@ -85,7 +97,7 @@ export default class Newsletter extends Component {
 
                         <input
                             type="text"
-                            name="hp463dc2a9-b2ff-11e8-a3c9-06b79b628af2"
+                            name={inputKey}
                             tabIndex="-1"
                             autoComplete="nope"
                             className="Newsletter__Hidden"
@@ -100,6 +112,8 @@ export default class Newsletter extends Component {
                         </button>
                     </form>
                 )}
+                {error && <div className="Newsletter__Message Newsletter__Error">{error.message}</div>}
+
             </div>
         )
     }

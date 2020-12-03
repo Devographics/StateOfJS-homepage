@@ -1,6 +1,5 @@
-
-$root-size-mobile: 15px;
-$root-size: 19px;
+$root-size-mobile: 13px;
+$root-size: 17px;
 
 $smaller-font: 0.7rem;
 $small-font: 0.8rem;
@@ -10,35 +9,44 @@ $large-font: 1.1rem;
 $larger-font: 1.3rem;
 $largest-font: 1.5rem;
 
-$light: 100;
-$medium: 300;
-$bold: 500;
+$light: 300; // not used currently
+$medium: 400;
+$bold: 800;
 
-@mixin font-light{
-  font-weight: $light;
+@mixin font-light {
+    font-weight: $light;
 }
 
-@mixin font-regular{
-  font-weight: $medium;
+@mixin font-regular {
+    font-weight: $medium;
 }
 
-@mixin font-bold{
-  font-weight: $bold;
+@mixin font-bold {
+    font-weight: $bold;
 }
 
-@mixin primary-font{
-  font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
-  font-weight: 300;
+@mixin primary-font {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: $medium;
 }
-@mixin secondary-font{
-  font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
-  font-weight: 500;
-}
-
-pre, code{
-  @include secondary-font;
+@mixin secondary-font {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: $bold;
 }
 
-strong{
-  font-weight: 500;
+pre,
+code {
+    @include secondary-font;
+}
+
+strong {
+    font-weight: $bold;
+}
+
+.first-letter{
+    float: left;
+    display: block;
+    font-size: 6rem;
+    margin-right: $spacing/2;
+    line-height: 1;
 }

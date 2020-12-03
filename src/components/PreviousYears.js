@@ -10,9 +10,6 @@ const PreviousYears = () => (
             <a className="previous-years-link button" href="http://2017.stateofjs.com">
                 2017
             </a>
-            <a className="previous-years-link button" href="http://2018.stateofjs.com">
-                2018
-            </a>
         </div>
     </div>
 )

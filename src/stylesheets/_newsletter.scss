@@ -2,25 +2,18 @@
   // border: 1px solid $border-color;
   // padding: $spacing/2 $spacing/2;
   // margin-bottom: $spacing * 2;
+  @include flex-center;
+  flex-direction: column;
   form {
+      flex: 1;
+      width: 100%;
       @include medium-large {
           display: flex;
       }
       margin: 0;
   }
-}
-
-.Block--Newsletter {
-  @include border;
-  padding: $spacing * 1.5;
-  .newsletter {
-      margin-bottom: 0;
-  }
-  .block__title {
-      font-size: $large-font;
-  }
-  .block__contents {
-      font-size: $medium-font;
+  .hidden{
+    display: none;
   }
 }
 
@@ -35,13 +28,11 @@
   margin-right: $spacing/2;
   flex-grow: 1;
   width: 100%;
-  max-width: 300px;
   &:focus {
       outline: none;
-      border-color: $secondary-color;
   }
   .Newsletter--loading & {
-      background: $grey2;
+      background: $bg-color-light;
   }
 }
 .Newsletter__Button {
@@ -50,57 +41,29 @@
   @include small {
       width: 100%;
   }
-  // border-radius: 10px;
-  // padding: 10px 20px;
-  // background: $active-color;
-  // border: none;
-  // color: white;
-  // @include secondary-font;
-  // cursor: pointer;
-  // &:hover{
-  //   background: $secondary-color;
-  // }
 }
 .Newsletter__Hidden {
   display: none;
 }
-.Newsletter__Error {
-  border: 1px solid $red;
+.Newsletter__Message {
+  @include border;
+  width: 100%;
   padding: $spacing;
+  text-align: center;
+  @include font-bold;
+}
+.Newsletter__Error {
+  border-color: $red;
   color: $red;
-  margin-bottom: $spacing;
+  margin-top: $spacing;
 }
 .Newsletter__Success {
-  @include border;
-  padding: $spacing;
+  border-color: $pink;
+  color: $pink;
 }
 .Newsletter__Heading {
   margin-bottom: $spacing/2;
 }
 .Newsletter__Description {
   margin-bottom: $spacing;
-}
-.block--newsletter--home {
-  text-align: center;
-  @include border;
-  padding: $spacing * 1.5;
-  @include large {
-      margin-left: 250px;
-      margin-right: 250px;
-  }
-  .newsletter {
-      max-width: none;
-      margin: 0;
-  }
-  .block__title {
-      border-bottom: none;
-      padding: 0;
-      margin-bottom: $spacing/4;
-  }
-  p {
-      // font-size: $medium-font;
-  }
-  .Newsletter__Email{
-    max-width: none;
-  }
 }

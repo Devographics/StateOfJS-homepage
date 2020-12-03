@@ -3,15 +3,15 @@ import ReactMarkdown from 'react-markdown'
 import authors from '../data/authors.yaml'
 
 const About = () => (
-    <div className="section about">
-        <h2 className="about__heading">StateOfJS is Made by:</h2>
-        <div className="about__authors">
+    <div className="Block About">
+        <h3 className="Block__Heading About__Heading">The State of JavaScript is Made by:</h3>
+        <div className="About__Authors">
             {authors.map(({ name, slug, bio, url }) => (
-                <div key={slug} className="about__author">
-                    <h3 className="about__author__name">
+                <div key={slug} className="About__Author">
+                    <h4 className="About__Author__Name">
                         <a href={url}>{name}</a>
-                    </h3>
-                    <div className="about__author__bio">
+                    </h4>
+                    <div className="About__Author__Bio">
                         <ReactMarkdown source={bio} />
                     </div>
                 </div>

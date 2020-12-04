@@ -4,7 +4,7 @@ import ReactGA from 'react-ga'
 import fetch from 'isomorphic-fetch'
 
 const postUrl =
-    'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3s/add'
+    'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3/add'
 const dataSiteKey = '6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6'
 const inputKey = 'hpc4b27b6e-eb38-11e9-be00-06b4694bee2a'
 

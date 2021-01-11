@@ -14,6 +14,7 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-netlify",
     `gatsby-plugin-mdx`,
+    'gatsby-plugin-styled-components',
     //   'gatsby-plugin-eslint',
   ],
 }

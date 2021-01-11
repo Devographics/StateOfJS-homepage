@@ -5,7 +5,10 @@ import StreamContents from "../contents/stream.mdx"
 import styled from "styled-components"
 
 const StreamPage = () => (
-  <Layout>
+  <Layout
+    title="The State of JavaScript 2020 Launch Stream"
+    description="Join us to look back at 2020 and discuss upcoming trends with a panel of special guests. "
+  >
     <Logo />
     <Stream className="Content Content--Home Home layout-narrow">
       <StreamContents />

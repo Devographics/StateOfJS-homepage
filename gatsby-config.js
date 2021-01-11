@@ -1,18 +1,19 @@
 module.exports = {
   siteMetadata: {
-      title: `The State Of JavaScript`
+    title: `The State Of JavaScript`,
   },
   plugins: [
-      {
-          resolve: 'gatsby-source-filesystem',
-          options: {
-              name: 'pages',
-              path: `${__dirname}/src/pages`
-          }
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/pages`,
       },
-      'gatsby-plugin-react-helmet',
-      'gatsby-plugin-sass',
-      'gatsby-plugin-netlify',
+    },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-netlify",
+    `gatsby-plugin-mdx`,
     //   'gatsby-plugin-eslint',
-  ]
+  ],
 }

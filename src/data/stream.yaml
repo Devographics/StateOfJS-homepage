@@ -1,0 +1,40 @@
+hosts: 
+  - name: Alyssa Nicoll
+    twitterName: alyssanicoll
+    bio: >
+        Angular Dev Advocate for Kendo UI
+
+  - name: TJ VanToll
+    twitterName: tjvantoll
+    bio: >
+        Web Developer, Tech Author, Principal Developer Advocate at Progress
+
+guests: 
+  - name: Sacha Greif
+    twitterName: sachagreif
+    bio: >
+        Creator of the State of JavaScript survey. 
+
+  - name: Sarah Drasner
+    twitterName: sarah_edo 
+    bio: >
+        VP of Developer Experience at Netlify, core team Vue.js
+
+  - name: Josh W. Comeau
+    twitterName: joshwcomeau
+    bio: >
+        Instructor at Concordia Bootcamps
+
+  - name: Kent C. Dodds
+    twitterName: kentcdodds
+    bio: >
+        Improving the world with quality software.
+
+  # - name:
+  #   twitterName: 
+  #   bio: >
+
+  # - name:
+  #   twitterName: 
+  #   bio: >
+      

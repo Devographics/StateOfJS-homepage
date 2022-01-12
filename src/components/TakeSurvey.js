@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import qs from "qs"
 
-const surveyUrl = "https://survey.stateofjs.com/survey/state-of-js/2020"
+const surveyUrl = "https://app.stateofjs.com/survey/state-of-js/2021"
 
 export default () => {
   let suffix = ""

@@ -1,10 +1,10 @@
-- name:   Raphaël Benitte
-  slug:   raphael
-  avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
-  url:    https://github.com/plouc/
-  bio: >
-      Creator of the [Nivo](http://nivo.rocks/) JavaScript data visualization library as well
-      as [Mozaik](http://mozaik.rocks/), a tool for building beautiful dashboards.
+# - name:   Raphaël Benitte
+#   slug:   raphael
+#   avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
+#   url:    https://github.com/plouc/
+#   bio: >
+#       Creator of the [Nivo](http://nivo.rocks/) JavaScript data visualization library as well
+#       as [Mozaik](http://mozaik.rocks/), a tool for building beautiful dashboards.
 
 - name:   Sacha Greif
   slug:   sacha

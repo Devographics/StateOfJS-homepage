@@ -408,3 +408,14 @@ Logo
   @include flex-center;
   margin-bottom: $spacing * 2;
 }
+
+
+.logo-image{
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto $spacing * 2 auto;
+  img {
+    display: block;
+    width: 100%;
+  }
+}

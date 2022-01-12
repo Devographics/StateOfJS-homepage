@@ -92,8 +92,14 @@
   }
 }
 
-.ComingSoon{
-  .button{
+.ComingSoon {
+  .button {
     margin-bottom: $spacing;
+  }
+}
+
+.Intro {
+  h2 {
+    text-align: center;
   }
 }

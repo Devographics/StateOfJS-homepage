@@ -16,7 +16,7 @@ const Languages = () => {
       </p>
       <a
         className="languages-help"
-        href="https://github.com/StateOfJS/state-of-js-graphql-results-api/issues/50"
+        href="https://github.com/StateOfJS/locale-en-US"
       >
         Help us translate the survey in your language.
       </a>

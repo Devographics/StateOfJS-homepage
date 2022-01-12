@@ -6,7 +6,7 @@ export default class ViewResults extends React.Component {
       <div className="ViewResults">
         <a
           className="button large-button"
-          href="https://2020.stateofjs.com"
+          href="https://2021.stateofjs.com"
         >
           View Results
         </a>

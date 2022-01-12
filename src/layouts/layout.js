@@ -6,7 +6,7 @@ export default class Layout extends React.Component {
   render() {
     const description = this.props.description || "The annual survey of the JavaScript ecosystem."
     const url = "https://stateofjs.com"
-    const image = "https://stateofjs.com/images/stateofjs2020.png"
+    const image = "https://stateofjs.com/images/stateofjs2021.png"
     const title = this.props.title || "The State of JavaScript Survey"
     const meta = [
       { charset: "utf-8" },

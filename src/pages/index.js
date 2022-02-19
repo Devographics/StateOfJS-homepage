@@ -9,7 +9,7 @@ import Intro from "../components/Intro"
 import Languages from "../components/Languages"
 import Translators from "../components/Translators"
 import Logo from "../components/Logo"
-// import ViewResults from "../components/ViewResults"
+import ViewResults from "../components/ViewResults"
 // import ReactGA from 'react-ga'
 import Layout from "../layouts/layout.js"
 
@@ -19,11 +19,11 @@ const Index = () => (
     <Logo />
     <div className="Content Content--Home Home layout-narrow">
       <Intro />
-      <ResultsComingSoon />
-      {/* <div className="Block Actions Block--Actions">
-        <TakeSurvey />
+      {/* <ResultsComingSoon /> */}
+      <div className="Block Actions Block--Actions">
+        {/* <TakeSurvey /> */}
         <ViewResults />
-      </div> */}
+      </div>
       <Share />
       <Newsletter />
       {/* <About /> */}
